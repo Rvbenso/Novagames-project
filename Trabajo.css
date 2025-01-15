@@ -1,0 +1,151 @@
+body 
+    {
+    background:  linear-gradient(to right, rgba(0, 128, 255, 0.562), rgba(255, 255, 255, 0.473), #00c3c38a); /*Fondo de imagen*/
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    padding: 2%;
+    }
+
+*   {line-height: 1.5; font-family: Arial;}
+footer a {text-decoration: none; }
+
+
+/*----Cabecero----*/
+
+main 
+    {padding: 1%;}
+
+header 
+    {margin-top: 1%;}
+
+header img 
+    {margin: 10ch; border:double black 6px; transform: rotate(-5deg);}
+
+/*----Cabecero----*/
+
+
+/*----Quienes somos----*/
+
+img 
+    {border:solid 10px; border-radius: 30px; border-image: linear-gradient(to right,rgba(0, 255, 76, 0.384),rgba(255, 255, 255, 0.466)) 1% fill;}
+
+/*----Quienes somos----*/
+
+
+/*----Productos----*/
+form 
+    {margin: 1% 20%;  position:relative;  border: groove 15px rgba(0, 38, 255, 0.425);  border-radius: 25px;  padding: 2%;  text-align: left; font-size: 140%;}
+
+@media all and (min-width:1px) {form {border: hidden;}}
+
+
+::placeholder 
+    {color: rgba(0, 0, 0, 0.653);}
+
+h3
+    {color:rgb(0, 47, 255);}
+
+h2
+    {color:rgb(89, 0, 255);  background: rgba(0, 255, 0, 0.523);}
+
+.boton 
+    {width: 10%;   text-align: center;  border-radius: 10px;  background-color: rgba(17, 0, 255, 0.164);  margin: 1%; font-size: 110%;}
+
+.fondo
+    {background: fixed;  background-color: rgba(105, 0, 126, 0.395);  border: hidden; border-radius: 25px;  padding: 5%; text-align: center; margin: 2%;}
+
+/*----Productos----*/
+#HideLink
+{text-decoration: none; color:rgb(33, 99, 99);}
+
+#advertencia
+{color:red;}
+
+footer 
+    {text-align: left;}
+
+/*----Menu----*/
+
+#Lista 
+    {
+    display: block;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    position:fixed;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+    }
+
+#Lista a 
+    {text-decoration: none;   color: #232323;   transition: color 0.3s ease;}
+
+#Lista a:hover 
+    {color:white}
+
+#Lista input 
+    {
+    display: block;
+    width: 40px;
+    height: 33px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+    }
+
+#Lista span 
+    {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: black;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    }
+
+#Lista span:first-child 
+    {transform-origin: 0% 0%;}
+
+#Lista span:nth-last-child(2) 
+    {transform-origin: 0% 100%;}
+
+#Lista input:checked~span 
+    {opacity: 1;   transform: rotate(45deg) translate(-2px, -1px);   background: black;}
+
+#Lista input:checked~span:nth-last-child(3) 
+    {opacity: 0;   transform: rotate(0deg) scale(0.2, 0.2);}
+
+#Lista input:checked~span:nth-last-child(2) 
+    {transform: rotate(-45deg) translate(0, -1px);}
+
+#Listado 
+    {
+    position: absolute;
+    width: 250px;
+    margin: -100px 0 0 -50px;
+    padding: 25px;
+    padding-top: 70px;
+    background: linear-gradient(to right,rgb(66, 195, 255),white);
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    }
+#Listado li 
+    {padding: 10px 0;   font-size: 22px;}
+
+#Lista input:checked~ul 
+    {transform: none;}
+
+/*----Menu----*/

@@ -1,0 +1,162 @@
+<!doctype HTML>
+
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="Trabajo.css" media="">
+    <title>Nova games</title>
+    
+</head>
+
+<body>
+<!----------------------------------------      Indice     -------------------------------------------->
+<header> 
+    <nav role="navigation">
+        <div id="Lista">
+            <input type="checkbox"/>
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="Listado">
+                <a href="Home.html">
+                    <li>Home</li>
+                </a><hr>
+                <a href="Quienes somos.html">
+                    <li>¿Quien somos?</li>
+                </a><hr>
+                <a href="Productos.html">
+                    <li>Catálogo de productos</li>
+                </a><hr>
+                <a href="Manuales.html">
+                    <li>Manuales</li>
+                </a><hr>
+                <a href="Servicios.html">
+                    <li>Servicios disponibles</li>
+                </a><hr>
+                <a href="Contacto.html">
+                    <li>Contacta con nosotros</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+    <a href="Home.html"><img id="imgcabecero" tittle="Nombre Empresa" src="images/Nombre.png" alt="Algo falló al mostrar la imagen"><br></a>
+</header>
+<!----------------------------------------      Indice     -------------------------------------------->
+    <main>
+        
+        <h3>Aqui podras registrar tu nuevo juego y guardarlo para consultarlo cuando lo necesites.</h3>
+
+
+        <section>
+            <form id="formulario1">
+                <figure>
+                    <fieldset>
+                        <legend><b> Caracteristicas del juego: </b></legend>
+                        <table>
+                            <tr>
+                                <td>Número mínimo de jugadores: </td>
+                                <td></td>
+                                <td><input class="fondo" number="Número min" type="number" placeholder="Número min: 1, 2, 3, 4..." min="1" step value=""> </td>
+                            </tr>
+                            <tr>
+                                <td>Número máximo de jugadores: </td>
+                                <td></td>
+                                <td><input class="fondo" number="Número max" type="number" placeholder="Número max: 1, 2, 3, 4..." min="1" step value=""></td>
+                            </tr>
+                            <tr>
+                                <td>Tiempo:</td>
+                                <td></td>
+                                <td><input class="fondo" time="Tiempo:" type="time" placeholder="30' 45' 1h" value=""></td>
+                            </tr>
+                            <tr>
+                                <td>Tipo de juego:</td>
+                                <td></td>
+                                <td><input type="checkbox" value="">
+                                    Gestión
+                                    <input type="checkbox" value="">
+                                    Cooperativo
+                                    <input type="checkbox" value="">
+                                    Competitivo <br>
+                                    <input type="checkbox" value="">
+                                    Investigación
+                                    <input type="checkbox" value="">
+                                    Cartas
+                                    <input type="checkbox" value="">
+                                    Roles ocultos
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Calificación:</td>
+                                <td></td>
+                                <td><input range="Calificación:" type="range" step="10" value=""></td>
+                            </tr>
+                            <tr>
+                                <td>Precio:</td>
+                                <td></td>
+                                <td><input class="fondo" number="Precio €:" type="number" placeholder="10€ 25€ 50€" value=""></td>
+                            </tr>
+                        </table><br>
+                    </fieldset>
+                </figure>
+            </form>
+        </section>
+
+        <section>
+            <form autocomplete="on"> 
+                <figure>
+                    <fieldset>
+                        <legend><b> Descripcion </b><br></legend>
+                        <div>
+                            <details open>
+                                <summary>
+                                    Descripción del juego.
+                                </summary>
+                                <textarea class="fondo" placeholder="Puede describir aqui el juego" rows="10px" cols="96px"></textarea>
+                            </details>
+                        </div><br>
+                        <div>
+                            <table>
+                                <thead></thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Nombre del juego:</td>
+                                        <td><input class="fondo" type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fecha:</td>
+                                        <td><input class="fondo" type="date" value=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>A las:</td>
+                                        <td><input class="fondo" type="time" value=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>En:</td>
+                                        <td><input class="fondo" type="address" placeholder="Sevilla, Andalucia, Spain" value=""></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </fieldset><br>
+                </figure>
+            </form>
+        </section>
+
+        <button class="boton" type="button" value="Guardar"><h1><b>Guardar</b></h1></button><br>
+
+        <!----------------------------------------      Paginas externas     -------------------------------------------->
+    <footer>
+        <br><hr>
+        <nav>
+            <b><h4>Visitanos en: </h4></b>
+            <button><a target="_blank" href="https://www.instagram.com/novagames">Instagram </a></button>
+            <button><a target="_blank" href="https://www.twitter.com/novagames">Twitter</a></button>
+            <button><a target="_blank" href="http://www.tiktok.com/@novagames">TikTok </a></button>
+            <button><a target="_blank" href="https://es-la.facebook.com/novagames/">Facebook </a></button><br><br><br>
+        </nav>
+    </footer>
+<!----------------------------------------      Paginas externas     -------------------------------------------->
+    </main>
+</body>
+
+</html>
